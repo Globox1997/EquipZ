@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "e e",
+        "eee",
+        "eee"
+    ],
+    "key": {
+        "e": {
+            "item": "equip:obsidian_ingot"
+        }
+    },
+    "result": {
+        "item": "equip:obsidian_chestplate"
+    }
+}

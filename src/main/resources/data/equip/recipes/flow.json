@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " f ",
+        " fe",
+        " d "
+    ],
+    "key": {
+        "d": {
+            "item": "equip:coal_ingot"
+        },
+        "f": {
+            "item": "equip:bone_ingot"
+        },
+        "e": {
+            "item": "minecraft:diamond"
+        }
+    },
+    "result": {
+        "item": "equip:flow"
+    }
+}

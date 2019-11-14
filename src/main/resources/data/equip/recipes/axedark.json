@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "fe ",
+        "ed ",
+        "  e"
+    ],
+    "key": {
+        "d": {
+            "item": "minecraft:stick"
+        },
+        "e": {
+            "item": "equip:coal_ingot"
+        },
+        "f": {
+            "item": "equip:purplediamond"
+        }
+    },
+    "result": {
+        "item": "equip:axedark"
+    }
+}

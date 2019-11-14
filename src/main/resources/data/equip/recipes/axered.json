@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "fe ",
+        "ed ",
+        "  e"
+    ],
+    "key": {
+        "d": {
+            "item": "minecraft:stick"
+        },
+        "e": {
+            "item": "equip:redstone_ingot"
+        },
+        "f": {
+            "item": "minecraft:diamond"
+        }
+    },
+    "result": {
+        "item": "equip:axered"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "e e",
+        "eee",
+        "eee"
+    ],
+    "key": {
+        "e": {
+            "item": "equip:coal_ingot"
+        }
+    },
+    "result": {
+        "item": "equip:coal_chestplate"
+    }
+}

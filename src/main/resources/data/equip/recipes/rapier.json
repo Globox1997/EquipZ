@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "f",
+        "f",
+        "d"
+    ],
+    "key": {
+        "d": {
+            "item": "equip:bluerod"
+        },
+        "f": {
+            "item": "equip:bone_ingot"
+        }
+    },
+    "result": {
+        "item": "equip:rapier"
+    }
+}
