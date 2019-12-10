@@ -33,7 +33,7 @@ public class glomod implements ModInitializer {
                                 stacks.add(new ItemStack(SwordItems.Rapier));
                                 stacks.add(new ItemStack(SwordItems.Blue));
                                 stacks.add(new ItemStack(SwordItems.Flow));
-                                stacks.add(ItemStack.EMPTY);
+                                stacks.add(new ItemStack(SwordItems.Knighter));
                                 stacks.add(ItemStack.EMPTY);
                                 stacks.add(ItemStack.EMPTY);
                                 stacks.add(new ItemStack(ArmorItems.slime_helmet));

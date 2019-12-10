@@ -38,7 +38,7 @@ public class EmeraldArmorMaterial implements ArmorMaterial {
 
     @Override
     public String getName() {
-        return "emerald";
+        return "emerald1";
     }
 
     @Override

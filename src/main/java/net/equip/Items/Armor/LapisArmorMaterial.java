@@ -38,7 +38,7 @@ public class LapisArmorMaterial implements ArmorMaterial {
 
     @Override
     public String getName() {
-        return "lapis";
+        return "lapis1";
     }
 
     @Override

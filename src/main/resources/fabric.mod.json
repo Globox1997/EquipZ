@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "equip",
-  "version": "1.2",
+  "version": "1.3",
   "name": "EquipZ",
   "description": "Armor and Weapons",
   "authors": [
@@ -12,7 +12,7 @@
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
   "license": "CC0-1.0",
-  "icon": "assets/equip.logo.png",
+  "icon": "assets/equip/logo.png",
   "environment": "*",
   "entrypoints": {
     "main": [

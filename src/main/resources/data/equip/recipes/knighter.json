@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " ff",
+        "fff",
+        "df "
+    ],
+    "key": {
+        "f": {
+            "item": "minecraft:iron_ingot"
+        },
+        "d": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "equip:knighter"
+    }
+}
