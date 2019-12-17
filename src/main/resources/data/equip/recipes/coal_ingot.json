@@ -1,12 +1,15 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:coal_block"
-        }
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ee",
+        "ee"
     ],
+    "key": {
+        "e": {
+            "item": "minecraft:coal"
+        }
+    },
     "result": {
-        "item": "equip:coal_ingot",
-        "count": 2
+        "item": "equip:coal_ingot"
     }
 }

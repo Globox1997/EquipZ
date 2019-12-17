@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " de",
+        "d e",
+        " de"
+    ],
+    "key": {
+        "e": {
+            "item": "minecraft:string"
+        },
+        "d": {
+            "item": "equip:coralrod"
+        }
+    },
+    "result": {
+        "item": "equip:coralbow"
+    }
+}

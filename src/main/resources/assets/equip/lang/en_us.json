@@ -37,5 +37,7 @@
     "item.equip.bluerod": "§6Arunas Rod",
     "item.equip.bone_ingot": "§fBone Ingot",
     "itemGroup.equip.glomod": "EquipZ",
-    "item.equip.knighter": "§7Knight´s Sword"
+    "item.equip.knighter": "§7Knight´s Sword",
+    "item.equip.coralbow": "§3Coral Bow",
+    "item.equip.coralrod": "§3Coral Rod"
 }
