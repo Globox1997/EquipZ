@@ -9,11 +9,11 @@ import net.minecraft.sound.SoundEvents;
 
 public class ObsidianArmorMaterial implements ArmorMaterial {
     private static final int[] BASE_DURABILITY = new int[] { 15, 17, 18, 15 };
-    private static final int[] PROTECTION_AMOUNTS = new int[] { 2, 5, 6, 2 };
+    private static final int[] PROTECTION_AMOUNTS = new int[] { 3, 7, 8, 3 };
 
     @Override
     public int getDurability(EquipmentSlot equipmentSlot) {
-        return BASE_DURABILITY[equipmentSlot.getEntitySlotId()] * 25;
+        return BASE_DURABILITY[equipmentSlot.getEntitySlotId()] * 23;
     }
 
     @Override
@@ -23,12 +23,12 @@ public class ObsidianArmorMaterial implements ArmorMaterial {
 
     @Override
     public int getEnchantability() {
-        return 10;
+        return 1;
     }
 
     @Override
     public SoundEvent getEquipSound() {
-        return SoundEvents.ITEM_ARMOR_EQUIP_IRON;
+        return SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND;
     }
 
     @Override

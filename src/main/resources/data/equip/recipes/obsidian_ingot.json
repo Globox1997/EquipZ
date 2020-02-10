@@ -1,12 +1,9 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:obsidian"
-        }
-    ],
-    "result": {
-        "item": "equip:obsidian_ingot",
-        "count": 2
-    }
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:obsidian",
+        "item_h": "minecraft:obsidian"
+    },
+    "result": "equip:obsidian_ingot",
+    "count": 2
 }

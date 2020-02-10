@@ -1,13 +1,18 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:diamond"
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " f ",
+        "fdf",
+        " f "
+    ],
+    "key": {
+        "d": {
+            "item": "equip:newdia"
         },
-        {
+        "f": {
             "item": "minecraft:purple_dye"
         }
-    ],
+    },
     "result": {
         "item": "equip:purplediamond"
     }

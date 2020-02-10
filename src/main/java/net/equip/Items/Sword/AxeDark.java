@@ -1,9 +1,11 @@
 package net.equip.Items.Sword;
 
+import java.util.List;
 import java.util.Random;
 import java.util.function.Consumer;
 
 import net.equip.glomod;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
@@ -12,10 +14,17 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.text.Text;
+import net.minecraft.text.TranslatableText;
+import net.minecraft.world.World;
 
 public class AxeDark extends SwordItem {
     public AxeDark(ToolMaterial toolMaterial_1) {
         super(toolMaterial_1, 3, -2.9f, new Item.Settings().group(glomod.equip_GROUP));
+    }
+
+    public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
+        tooltip.add(new TranslatableText("item.equip.axedark.tooltip"));
     }
 
     public boolean postHit(ItemStack itemStack_1, LivingEntity livingEntity_1, LivingEntity livingEntity_2) {

@@ -13,7 +13,7 @@ public class EmeraldArmorMaterial implements ArmorMaterial {
 
     @Override
     public int getDurability(EquipmentSlot equipmentSlot) {
-        return BASE_DURABILITY[equipmentSlot.getEntitySlotId()] * 25;
+        return BASE_DURABILITY[equipmentSlot.getEntitySlotId()] * 22;
     }
 
     @Override
@@ -23,7 +23,7 @@ public class EmeraldArmorMaterial implements ArmorMaterial {
 
     @Override
     public int getEnchantability() {
-        return 10;
+        return 5;
     }
 
     @Override
@@ -43,7 +43,7 @@ public class EmeraldArmorMaterial implements ArmorMaterial {
 
     @Override
     public float getToughness() {
-        return 1;
+        return 0;
     }
 
 }

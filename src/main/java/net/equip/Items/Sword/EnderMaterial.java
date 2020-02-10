@@ -6,7 +6,7 @@ import net.minecraft.recipe.Ingredient;
 public class EnderMaterial implements ToolMaterial {
     @Override
     public int getDurability() {
-        return 916;
+        return 912;
     }
 
     @Override

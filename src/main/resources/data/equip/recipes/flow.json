@@ -1,9 +1,9 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        " f ",
-        " fe",
-        " d "
+        " ff",
+        "eff",
+        "df "
     ],
     "key": {
         "d": {
@@ -13,7 +13,7 @@
             "item": "equip:bone_ingot"
         },
         "e": {
-            "item": "minecraft:diamond"
+            "item": "equip:newdia"
         }
     },
     "result": {

@@ -1,9 +1,9 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "fe ",
-        "ed ",
-        "  e"
+        " ef",
+        " de",
+        "e  "
     ],
     "key": {
         "d": {
@@ -13,7 +13,7 @@
             "item": "equip:redstone_ingot"
         },
         "f": {
-            "item": "minecraft:diamond"
+            "item": "equip:newdia"
         }
     },
     "result": {

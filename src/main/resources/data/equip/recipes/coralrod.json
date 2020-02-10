@@ -1,13 +1,18 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " e ",
+        "efe",
+        " e "
+    ],
+    "key": {
+        "e": {
             "item": "minecraft:prismarine_shard"
         },
-        {
+        "f": {
             "item": "minecraft:stick"
         }
-    ],
+    },
     "result": {
         "item": "equip:coralrod"
     }

@@ -1,8 +1,8 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        " ff",
-        "fff",
+        " fe",
+        "fef",
         "df "
     ],
     "key": {
@@ -11,6 +11,9 @@
         },
         "d": {
             "item": "minecraft:stick"
+        },
+        "e": {
+            "item": "minecraft:iron_block"
         }
     },
     "result": {

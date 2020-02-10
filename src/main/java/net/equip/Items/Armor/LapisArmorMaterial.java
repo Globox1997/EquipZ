@@ -9,11 +9,11 @@ import net.minecraft.sound.SoundEvents;
 
 public class LapisArmorMaterial implements ArmorMaterial {
     private static final int[] BASE_DURABILITY = new int[] { 12, 14, 15, 10 };
-    private static final int[] PROTECTION_AMOUNTS = new int[] { 2, 5, 6, 2 };
+    private static final int[] PROTECTION_AMOUNTS = new int[] { 2, 4, 5, 2 };
 
     @Override
     public int getDurability(EquipmentSlot equipmentSlot) {
-        return BASE_DURABILITY[equipmentSlot.getEntitySlotId()] * 25;
+        return BASE_DURABILITY[equipmentSlot.getEntitySlotId()] * 15;
     }
 
     @Override
@@ -23,12 +23,12 @@ public class LapisArmorMaterial implements ArmorMaterial {
 
     @Override
     public int getEnchantability() {
-        return 10;
+        return 0;
     }
 
     @Override
     public SoundEvent getEquipSound() {
-        return SoundEvents.ITEM_ARMOR_EQUIP_IRON;
+        return SoundEvents.ITEM_ARMOR_EQUIP_GOLD;
     }
 
     @Override
@@ -43,7 +43,7 @@ public class LapisArmorMaterial implements ArmorMaterial {
 
     @Override
     public float getToughness() {
-        return 1;
+        return 0;
     }
 
 }

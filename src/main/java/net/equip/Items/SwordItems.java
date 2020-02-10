@@ -21,7 +21,7 @@ public class SwordItems {
     public static final Item Rapier = register("rapier", new Rapier((ENDERMATERIAL)));
     public static final Item Flow = register("flow", new Flow((BLUEMATERIAL)));
     public static final Item Blue = register("blue", new Blue((BLUEMATERIAL)));
-    public static final Item Knighter = register("knighter", new Blue((KNIGHTERMATERIAL)));
+    public static final Item Knighter = register("knighter", new Knighter((KNIGHTERMATERIAL)));
 
     private static Item register(String id, Item item) {
         return register(new Identifier("equip", id), item);

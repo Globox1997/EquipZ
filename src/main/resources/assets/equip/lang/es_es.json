@@ -34,10 +34,17 @@
     "item.equip.redstone_ingot": "§4Redstone Ingot",
     "item.equip.obsidian_ingot": "§5Obsidian Ingot",
     "item.equip.purplediamond": "§5Purple Diamond",
+    "item.equip.newdia": "Reinforced Diamond",
     "item.equip.bluerod": "§6Arunas Rod",
     "item.equip.bone_ingot": "§fBone Ingot",
     "itemGroup.equip.glomod": "EquipZ",
     "item.equip.knighter": "§8Knight´s Sword",
     "item.equip.coralbow": "§3Coral Bow",
-    "item.equip.coralrod": "§3Coral Rod"
+    "item.equip.coralrod": "§3Coral Rod",
+    "item.equip.ender.tooltip": "§9Glowing + Levitation Chance",
+    "item.equip.axered.tooltip": "§9Slowness Chance",
+    "item.equip.axedark.tooltip": "§9Slowness Chance",
+    "item.equip.flow.tooltip": "§9Strength Chance",
+    "item.equip.blue.tooltip": "§9Regeneration Chance",
+    "item.equip.rapier.tooltip": "§9Poison Chance"
 }

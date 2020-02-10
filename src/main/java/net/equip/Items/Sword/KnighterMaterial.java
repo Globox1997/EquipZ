@@ -6,7 +6,7 @@ import net.minecraft.recipe.Ingredient;
 public class KnighterMaterial implements ToolMaterial {
     @Override
     public int getDurability() {
-        return 916;
+        return 614;
     }
 
     @Override

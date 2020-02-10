@@ -1,13 +1,18 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:blaze_rod"
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " e ",
+        "efe",
+        " e "
+    ],
+    "key": {
+        "e": {
+            "item": "minecraft:blaze_powder"
         },
-        {
+        "f": {
             "item": "minecraft:stick"
         }
-    ],
+    },
     "result": {
         "item": "equip:bluerod"
     }

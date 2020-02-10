@@ -9,11 +9,11 @@ import net.minecraft.sound.SoundEvents;
 
 public class SlimeArmorMaterial implements ArmorMaterial {
     private static final int[] BASE_DURABILITY = new int[] { 12, 14, 15, 10 };
-    private static final int[] PROTECTION_AMOUNTS = new int[] { 2, 5, 6, 2 };
+    private static final int[] PROTECTION_AMOUNTS = new int[] { 1, 1, 1, 1 };
 
     @Override
     public int getDurability(EquipmentSlot equipmentSlot) {
-        return BASE_DURABILITY[equipmentSlot.getEntitySlotId()] * 25;
+        return BASE_DURABILITY[equipmentSlot.getEntitySlotId()] * 16;
     }
 
     @Override
@@ -28,7 +28,7 @@ public class SlimeArmorMaterial implements ArmorMaterial {
 
     @Override
     public SoundEvent getEquipSound() {
-        return SoundEvents.ITEM_ARMOR_EQUIP_IRON;
+        return SoundEvents.ITEM_ARMOR_EQUIP_LEATHER;
     }
 
     @Override
@@ -43,7 +43,7 @@ public class SlimeArmorMaterial implements ArmorMaterial {
 
     @Override
     public float getToughness() {
-        return 1;
+        return 0;
     }
 
 }

@@ -1,9 +1,9 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "d",
-        "d",
-        "e"
+        " dd",
+        "dfd",
+        "ed "
     ],
     "key": {
         "d": {
@@ -11,6 +11,9 @@
         },
         "e": {
             "item": "equip:bluerod"
+        },
+        "f": {
+            "item": "equip:newdia"
         }
     },
     "result": {
