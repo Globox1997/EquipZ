@@ -4,18 +4,12 @@ import java.util.UUID;
 
 import com.google.common.collect.Multimap;
 
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
-import net.minecraft.entity.effect.StatusEffect;
-import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.world.World;
 import net.equip.glomod;
 
 public class SlimeBase extends ArmorItem {
@@ -39,18 +33,8 @@ public class SlimeBase extends ArmorItem {
                             EntityAttributeModifier.Operation.ADDITION));
 
         }
-
+     
         return multimap_1;
-    }
-
-    public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
-
-        if (slot == 0 & slot == 1 & slot == 2 & slot == 3) {
-            StatusEffectInstance str = new StatusEffectInstance(StatusEffect.byRawId(5), 0, 0, false, false);
-            LivingEntity bob = (LivingEntity) entity;
-            bob.addStatusEffect(str);
-        }
-
     }
 
 }

@@ -9,7 +9,7 @@ import net.minecraft.sound.SoundEvents;
 
 public class ObsidianArmorMaterial implements ArmorMaterial {
     private static final int[] BASE_DURABILITY = new int[] { 15, 17, 18, 15 };
-    private static final int[] PROTECTION_AMOUNTS = new int[] { 3, 7, 8, 3 };
+    private static final int[] PROTECTION_AMOUNTS = new int[] { 2, 6, 7, 2 };
 
     @Override
     public int getDurability(EquipmentSlot equipmentSlot) {
@@ -44,6 +44,12 @@ public class ObsidianArmorMaterial implements ArmorMaterial {
     @Override
     public float getToughness() {
         return 1;
+    }
+
+    @Override
+    public float getKnockbackResistance() {
+        // TODO Auto-generated method stub
+        return 0;
     }
 
 }

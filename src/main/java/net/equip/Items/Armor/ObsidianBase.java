@@ -13,7 +13,7 @@ import net.minecraft.item.Item;
 import net.equip.glomod;
 
 public class ObsidianBase extends ArmorItem {
-    double a = 2.0;
+    double a = 1.0;
     double b = 0.4;
     private static final UUID[] MODIFIERS = new UUID[] { UUID.fromString("845DB27C-C624-495F-8C9F-6020A9A58B6B"),
             UUID.fromString("D8499B04-0E66-4726-AB29-64469D734E0D"),

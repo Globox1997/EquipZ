@@ -46,4 +46,10 @@ public class EmeraldArmorMaterial implements ArmorMaterial {
         return 0;
     }
 
+    @Override
+    public float getKnockbackResistance() {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
 }

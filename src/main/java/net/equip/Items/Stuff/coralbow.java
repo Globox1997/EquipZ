@@ -1,7 +1,10 @@
 package net.equip.Items.Stuff;
 
+import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
+
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.LivingEntity;
@@ -15,6 +18,8 @@ import net.minecraft.item.Items;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
+import net.minecraft.text.Text;
+import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.TypedActionResult;
@@ -128,4 +133,8 @@ public class coralbow extends BowItem {
    public Predicate<ItemStack> getProjectiles() {
       return BOW_PROJECTILES;
    }
+
+   public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
+      tooltip.add(new TranslatableText("item.equip.coralbow.tooltip"));
+  }
 }

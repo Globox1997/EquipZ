@@ -46,4 +46,10 @@ public class CoalArmorMaterial implements ArmorMaterial {
         return 0;
     }
 
+    @Override
+    public float getKnockbackResistance() {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
 }

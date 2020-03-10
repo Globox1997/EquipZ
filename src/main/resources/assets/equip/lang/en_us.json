@@ -41,10 +41,12 @@
     "item.equip.knighter": "§7Knight´s Sword",
     "item.equip.coralbow": "§3Coral Bow",
     "item.equip.coralrod": "Coral Rod",
-    "item.equip.ender.tooltip": "§9Glowing + Levitation Chance",
-    "item.equip.axered.tooltip": "§9Slowness Chance",
-    "item.equip.axedark.tooltip": "§9Slowness Chance",
-    "item.equip.flow.tooltip": "§9Strength Chance",
-    "item.equip.blue.tooltip": "§9Regeneration Chance",
-    "item.equip.rapier.tooltip": "§9Poison Chance"
+    "item.equip.ender.tooltip": "§9Glowing + Chance of Levitation",
+    "item.equip.axered.tooltip": "§9Chance of Slowness",
+    "item.equip.axedark.tooltip": "§9Chance of Slowness",
+    "item.equip.flow.tooltip": "§9Chance of Strength",
+    "item.equip.blue.tooltip": "§9Chance of Regeneration",
+    "item.equip.rapier.tooltip": "§9Chance of Poison",
+    "item.equip.coralbow.tooltip": "A bow of the elves",
+    "item.equip.knighter.tooltip": "A warriors old friend"
 }
