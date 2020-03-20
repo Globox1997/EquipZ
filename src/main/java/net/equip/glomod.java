@@ -93,6 +93,7 @@ public class glomod implements ModInitializer {
                 Registry.register(Registry.ITEM, new Identifier("equip", "newdia"), NEWDIA);
                 SwordItems.init();
                 ArmorItems.init();
+                eloot.init();
 
         }
 }
