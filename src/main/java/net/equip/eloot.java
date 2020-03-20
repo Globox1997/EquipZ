@@ -12,7 +12,7 @@ public class eloot {
 
     public static final Identifier[] LONE = new Identifier[] { LootTables.SIMPLE_DUNGEON_CHEST, LootTables.SHIPWRECK_SUPPLY_CHEST, LootTables.STRONGHOLD_CORRIDOR_CHEST };
     public static final Identifier[] LTWO = new Identifier[] { LootTables.HERO_OF_THE_VILLAGE_TOOLSMITH_GIFT_GAMEPLAY };
-    public static final Identifier[] LTHREE = new Identifier[] { LootTables.SHIPWRECK_TREASURE_CHEST };
+    public static final Identifier[] LTHREE = new Identifier[] { LootTables.BURIED_TREASURE_CHEST };
 
     private static boolean isone(Identifier lootTable) {
         for (Identifier id : LONE) {
