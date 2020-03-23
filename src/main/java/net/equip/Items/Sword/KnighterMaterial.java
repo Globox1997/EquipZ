@@ -10,11 +10,6 @@ public class KnighterMaterial implements ToolMaterial {
     }
 
     @Override
-    public float getMiningSpeed() {
-        return 1.1F;
-    }
-
-    @Override
     public float getAttackDamage() {
         return 5;
     }
@@ -32,5 +27,10 @@ public class KnighterMaterial implements ToolMaterial {
     @Override
     public Ingredient getRepairIngredient() {
         return Ingredient.EMPTY;
+    }
+
+    @Override
+    public float getMiningSpeedMultiplier() {
+        return 0;
     }
 }
