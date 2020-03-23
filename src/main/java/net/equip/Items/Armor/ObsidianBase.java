@@ -15,6 +15,7 @@ import net.equip.glomod;
 public class ObsidianBase extends ArmorItem {
     double a = 1.0;
     double b = 0.4;
+    double c = -0.05;
     private static final UUID[] MODIFIERS = new UUID[] { UUID.fromString("845DB27C-C624-495F-8C9F-6020A9A58B6B"),
             UUID.fromString("D8499B04-0E66-4726-AB29-64469D734E0D"),
             UUID.fromString("9F3D476D-C118-4544-8365-64846904B48E"),
@@ -32,6 +33,9 @@ public class ObsidianBase extends ArmorItem {
                             EntityAttributeModifier.Operation.ADDITION));
             multimap_1.put(EntityAttributes.KNOCKBACK_RESISTANCE.getId(),
                     new EntityAttributeModifier(MODIFIERS[equipmentSlot_1.getEntitySlotId()], "RESIST", (double) this.b,
+                            EntityAttributeModifier.Operation.ADDITION));
+            multimap_1.put(EntityAttributes.MOVEMENT_SPEED.getId(),
+                    new EntityAttributeModifier(MODIFIERS[equipmentSlot_1.getEntitySlotId()], "SLOW", (double) this.c,
                             EntityAttributeModifier.Operation.ADDITION));
 
         }
