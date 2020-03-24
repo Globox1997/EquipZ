@@ -40,7 +40,7 @@ public class coralbow extends BowItem {
    public void onStoppedUsing(ItemStack stack, World world, LivingEntity user, int remainingUseTicks) {
       if (user instanceof PlayerEntity) {
          PlayerEntity playerEntity = (PlayerEntity)user;
-         boolean bl = playerEntity.abilities.creativeMode || EnchantmentHelper.getLevel(Enchantments.INFINITY, stack) > 0;
+         boolean bl = true;
          ItemStack itemStack = playerEntity.getArrowType(stack);
          if (!itemStack.isEmpty() || bl) {
             if (itemStack.isEmpty()) {
@@ -98,7 +98,7 @@ public class coralbow extends BowItem {
    }
 
    public static float getPullProgress(int useTicks) {
-      float f = (float)useTicks / 20.0F;
+      float f = (float)useTicks / 16.0F;
       f = (f * f + f * 2.0F) / 3.0F;
       if (f > 1.0F) {
          f = 1.0F;
@@ -131,6 +131,6 @@ public class coralbow extends BowItem {
    }
 
    public int getRange() {
-      return 15;
+      return 18;
    }
 }
