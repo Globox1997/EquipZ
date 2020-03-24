@@ -1,8 +1,8 @@
 package net.equip.Items.Armor;
 
+import net.equip.glomod;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -33,7 +33,7 @@ public class ObsidianArmorMaterial implements ArmorMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(Items.OBSIDIAN);
+        return Ingredient.ofItems(glomod.OBSIDIANINGOT);
     }
 
     @Override
