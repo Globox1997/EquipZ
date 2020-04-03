@@ -8,10 +8,10 @@
     "Globox"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/equipz",
+    "sources": "https://github.com/Globox1997/EquipZ"
   },
-  "license": "CC0-1.0",
+  "license": "GPLv3",
   "icon": "assets/equip/logo.png",
   "environment": "*",
   "entrypoints": {
