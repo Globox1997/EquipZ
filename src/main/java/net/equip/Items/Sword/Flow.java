@@ -30,22 +30,21 @@ public class Flow extends SwordItem {
     public boolean postHit(ItemStack itemStack_1, LivingEntity livingEntity_1, LivingEntity livingEntity_2) {
         Random random = new Random();
         int randomNumber = random.nextInt() % 2;
-
+        StatusEffectInstance str1 = new StatusEffectInstance(StatusEffect.byRawId(5), 40, 0, false, false, false);
+        StatusEffectInstance str2 = new StatusEffectInstance(StatusEffect.byRawId(5), 60, 0, false, false, false);
         itemStack_1.damage(1, (LivingEntity) livingEntity_2, (Consumer) ((livingEntity_1x) -> {
             ((LivingEntity) livingEntity_1x).sendEquipmentBreakStatus(EquipmentSlot.MAINHAND);
         }));
 
         switch (randomNumber) {
-        case 0:
-            StatusEffectInstance str1 = new StatusEffectInstance(StatusEffect.byRawId(5), 40, 0, false, false, false);
-            livingEntity_2.addStatusEffect(str1);
-            return true;
-        case 1:
-            StatusEffectInstance str2 = new StatusEffectInstance(StatusEffect.byRawId(5), 60, 0, false, false, false);
-            livingEntity_2.addStatusEffect(str2);
-            return true;
-        default:
-            return true;
+            case 0:
+                livingEntity_2.addStatusEffect(str1);
+                return true;
+            case 1:
+                livingEntity_2.addStatusEffect(str2);
+                return true;
+            default:
+                return true;
         }
 
     }

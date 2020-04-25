@@ -1,6 +1,8 @@
 package net.equip.Items.Armor;
 
 import net.equip.glomod;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -36,20 +38,19 @@ public class CoalArmorMaterial implements ArmorMaterial {
         return Ingredient.ofItems(glomod.COALINGOT);
     }
 
-    @Override
+    @Environment(EnvType.CLIENT)
     public String getName() {
         return "coal";
     }
 
     @Override
     public float getToughness() {
-        return 0;
+        return 0F;
     }
 
     @Override
     public float getKnockbackResistance() {
-        // TODO Auto-generated method stub
-        return 0;
+        return 0F;
     }
 
 }

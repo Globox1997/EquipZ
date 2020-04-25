@@ -1,6 +1,8 @@
 package net.equip.Items.Armor;
 
 import net.equip.glomod;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -9,7 +11,7 @@ import net.minecraft.sound.SoundEvents;
 
 public class ObsidianArmorMaterial implements ArmorMaterial {
     private static final int[] BASE_DURABILITY = new int[] { 15, 17, 18, 15 };
-    private static final int[] PROTECTION_AMOUNTS = new int[] { 2, 6, 7, 2 };
+    private static final int[] PROTECTION_AMOUNTS = new int[] { 3, 5, 6, 3 };
 
     @Override
     public int getDurability(EquipmentSlot equipmentSlot) {
@@ -36,20 +38,19 @@ public class ObsidianArmorMaterial implements ArmorMaterial {
         return Ingredient.ofItems(glomod.OBSIDIANINGOT);
     }
 
-    @Override
+    @Environment(EnvType.CLIENT)
     public String getName() {
         return "obsidian";
     }
 
     @Override
     public float getToughness() {
-        return 1;
+        return 1F;
     }
 
     @Override
     public float getKnockbackResistance() {
-        // TODO Auto-generated method stub
-        return 0;
+        return 0F;
     }
 
 }

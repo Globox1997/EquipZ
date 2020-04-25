@@ -26,8 +26,7 @@ public class glomod implements ModInitializer {
         public static final boneingot BONEINGOT = new boneingot(new Item.Settings().group(glomod.equip_GROUP));
         public static final coralbow CORALBOW = new coralbow(new Item.Settings().group(glomod.equip_GROUP));
         public static final coralrod CORALROD = new coralrod(new Item.Settings().group(glomod.equip_GROUP));
-        public static final newdia NEWDIA = new newdia(
-                new Item.Settings().group(glomod.equip_GROUP));
+        public static final newdia NEWDIA = new newdia(new Item.Settings().group(glomod.equip_GROUP));
 
         public static final ItemGroup equip_GROUP = FabricItemGroupBuilder.create(new Identifier("equip", "glomod"))
                         .icon(() -> new ItemStack(ArmorItems.obsidian_chestplate)).appendItems(stacks -> {

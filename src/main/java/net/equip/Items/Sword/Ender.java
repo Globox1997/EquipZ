@@ -25,36 +25,33 @@ public class Ender extends SwordItem {
 
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         tooltip.add(new TranslatableText("item.equip.ender.tooltip"));
+        tooltip.add(new TranslatableText("item.equip.ender.tooltip2"));
     }
 
     public boolean postHit(ItemStack itemStack_1, LivingEntity livingEntity_1, LivingEntity livingEntity_2) {
         Random random = new Random();
         int randomNumber = random.nextInt() % 2;
-
+        StatusEffectInstance glow1 = new StatusEffectInstance(StatusEffect.byRawId(24), 100, 0, false, false, false);
+        StatusEffectInstance lev = new StatusEffectInstance(StatusEffect.byRawId(25), 30, 0, false, false, false);
+        StatusEffectInstance glow2 = new StatusEffectInstance(StatusEffect.byRawId(24), 100, 0, false, false, false);
+        StatusEffectInstance glow3 = new StatusEffectInstance(StatusEffect.byRawId(24), 100, 0, false, false, false);
         itemStack_1.damage(1, (LivingEntity) livingEntity_2, (Consumer) ((livingEntity_1x) -> {
             ((LivingEntity) livingEntity_1x).sendEquipmentBreakStatus(EquipmentSlot.MAINHAND);
         }));
 
         switch (randomNumber) {
-        case 0:
-            StatusEffectInstance glow1 = new StatusEffectInstance(StatusEffect.byRawId(24), 100, 0, false, false,
-                    false);
-            livingEntity_1.addStatusEffect(glow1);
-            StatusEffectInstance lev = new StatusEffectInstance(StatusEffect.byRawId(25), 30, 0, false, false, false);
-            livingEntity_1.addStatusEffect(lev);
-            return true;
-        case 1:
-            StatusEffectInstance glow2 = new StatusEffectInstance(StatusEffect.byRawId(24), 100, 0, false, false,
-                    false);
-            livingEntity_1.addStatusEffect(glow2);
-            return true;
-        case 2:
-            StatusEffectInstance glow3 = new StatusEffectInstance(StatusEffect.byRawId(24), 100, 0, false, false,
-                    false);
-            livingEntity_1.addStatusEffect(glow3);
-            return true;
-        default:
-            return true;
+            case 0:
+                livingEntity_1.addStatusEffect(glow1);
+                livingEntity_1.addStatusEffect(lev);
+                return true;
+            case 1:
+                livingEntity_1.addStatusEffect(glow2);
+                return true;
+            case 2:
+                livingEntity_1.addStatusEffect(glow3);
+                return true;
+            default:
+                return true;
         }
 
     }

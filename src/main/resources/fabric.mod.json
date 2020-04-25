@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "equip",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "name": "EquipZ",
   "description": "Armor and Weapons",
   "authors": [
@@ -22,7 +22,7 @@
   },
   "mixins": [],
   "depends": {
-    "fabricloader": ">=0.4.0",
+    "fabricloader": ">=0.7.0",
     "fabric": "*"
   },
   "suggests": {
