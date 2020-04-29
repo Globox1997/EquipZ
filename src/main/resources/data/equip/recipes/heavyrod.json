@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "fef",
+    "ede",
+    "fef"
+  ],
+  "key": {
+    "d": {
+      "item": "minecraft:stick"
+    },
+    "e": {
+      "item": "minecraft:iron_ingot"
+    },
+    "f": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "result": {
+    "item": "equip:heavyrod"
+  }
+}

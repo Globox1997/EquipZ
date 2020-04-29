@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ff",
+    "ff"
+  ],
+  "key": {
+    "f": {
+      "item": "equip:redstone_ingot"
+    }
+  },
+  "result": {
+    "item": "minecraft:redstone_block"
+  }
+}

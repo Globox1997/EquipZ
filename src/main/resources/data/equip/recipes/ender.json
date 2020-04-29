@@ -1,16 +1,16 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "  d",
-        " d ",
-        "e  "
+        "d",
+        "d",
+        "e"
     ],
     "key": {
         "d": {
             "item": "equip:purplediamond"
         },
         "e": {
-            "item": "equip:coal_ingot"
+            "item": "equip:coalrod"
         }
     },
     "result": {

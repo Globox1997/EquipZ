@@ -1,11 +1,14 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        " e ",
+        "ded",
         "efe",
-        " e "
+        "ded"
     ],
     "key": {
+        "d": {
+            "item": "minecraft:prismarine_crystals"
+        },
         "e": {
             "item": "minecraft:prismarine_shard"
         },

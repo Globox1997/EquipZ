@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "fef",
+    "ede",
+    "fef"
+  ],
+  "key": {
+    "d": {
+      "item": "minecraft:stick"
+    },
+    "e": {
+      "item": "equip:coal_ingot"
+    },
+    "f": {
+      "item": "minecraft:flint"
+    }
+  },
+  "result": {
+    "item": "equip:coalrod"
+  }
+}

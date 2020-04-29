@@ -1,13 +1,13 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        " ef",
+        "efe",
         " de",
-        "e  "
+        " d "
     ],
     "key": {
         "d": {
-            "item": "minecraft:stick"
+            "item": "equip:heavyrod"
         },
         "e": {
             "item": "equip:coal_ingot"

@@ -14,19 +14,18 @@ import net.equip.Items.Stuff.*;
 
 public class glomod implements ModInitializer {
 
-        public static final coalingot COALINGOT = new coalingot(new Item.Settings().group(glomod.equip_GROUP));
-        public static final lapisingot LAPISINGOT = new lapisingot(new Item.Settings().group(glomod.equip_GROUP));
-        public static final redstoneingot REDSTONEINGOT = new redstoneingot(
-                        new Item.Settings().group(glomod.equip_GROUP));
-        public static final obsidianingot OBSIDIANINGOT = new obsidianingot(
-                        new Item.Settings().group(glomod.equip_GROUP));
-        public static final purplediamond PURPLEDIAMOND = new purplediamond(
-                        new Item.Settings().group(glomod.equip_GROUP));
-        public static final bluerod BLUEROD = new bluerod(new Item.Settings().group(glomod.equip_GROUP));
-        public static final boneingot BONEINGOT = new boneingot(new Item.Settings().group(glomod.equip_GROUP));
-        public static final coralbow CORALBOW = new coralbow(new Item.Settings().group(glomod.equip_GROUP));
-        public static final coralrod CORALROD = new coralrod(new Item.Settings().group(glomod.equip_GROUP));
-        public static final newdia NEWDIA = new newdia(new Item.Settings().group(glomod.equip_GROUP));
+        public static final coalingot COALINGOT = new coalingot(new Item.Settings());
+        public static final lapisingot LAPISINGOT = new lapisingot(new Item.Settings());
+        public static final redstoneingot REDSTONEINGOT = new redstoneingot(new Item.Settings());
+        public static final obsidianingot OBSIDIANINGOT = new obsidianingot(new Item.Settings());
+        public static final purplediamond PURPLEDIAMOND = new purplediamond(new Item.Settings());
+        public static final bluerod BLUEROD = new bluerod(new Item.Settings());
+        public static final boneingot BONEINGOT = new boneingot(new Item.Settings());
+        public static final coralbow CORALBOW = new coralbow(new Item.Settings());
+        public static final coralrod CORALROD = new coralrod(new Item.Settings());
+        public static final coalrod COALROD = new coalrod(new Item.Settings());
+        public static final heavyrod HEAVYROD = new heavyrod(new Item.Settings());
+        public static final newdia NEWDIA = new newdia(new Item.Settings());
 
         public static final ItemGroup equip_GROUP = FabricItemGroupBuilder.create(new Identifier("equip", "glomod"))
                         .icon(() -> new ItemStack(ArmorItems.obsidian_chestplate)).appendItems(stacks -> {
@@ -71,11 +70,14 @@ public class glomod implements ModInitializer {
                                 stacks.add(new ItemStack(glomod.REDSTONEINGOT));
                                 stacks.add(new ItemStack(glomod.OBSIDIANINGOT));
                                 stacks.add(new ItemStack(glomod.BONEINGOT));
+                                stacks.add(new ItemStack(glomod.NEWDIA));
+                                stacks.add(new ItemStack(glomod.PURPLEDIAMOND));
+                                stacks.add(ItemStack.EMPTY);
+                                stacks.add(ItemStack.EMPTY);
                                 stacks.add(new ItemStack(glomod.BLUEROD));
                                 stacks.add(new ItemStack(glomod.CORALROD));
-                                stacks.add(new ItemStack(glomod.PURPLEDIAMOND));
-                                stacks.add(new ItemStack(glomod.NEWDIA));
-
+                                stacks.add(new ItemStack(glomod.COALROD));
+                                stacks.add(new ItemStack(glomod.HEAVYROD));
                         }).build();
 
         @Override
@@ -90,6 +92,8 @@ public class glomod implements ModInitializer {
                 Registry.register(Registry.ITEM, new Identifier("equip", "coralbow"), CORALBOW);
                 Registry.register(Registry.ITEM, new Identifier("equip", "coralrod"), CORALROD);
                 Registry.register(Registry.ITEM, new Identifier("equip", "newdia"), NEWDIA);
+                Registry.register(Registry.ITEM, new Identifier("equip", "coalrod"), COALROD);
+                Registry.register(Registry.ITEM, new Identifier("equip", "heavyrod"), HEAVYROD);
                 SwordItems.init();
                 ArmorItems.init();
                 eloot.init();

@@ -1,11 +1,14 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        " e ",
+        "ded",
         "efe",
-        " e "
+        "ded"
     ],
     "key": {
+        "d": {
+            "item": "minecraft:gold_nugget"
+        },
         "e": {
             "item": "minecraft:blaze_powder"
         },
