@@ -21,7 +21,7 @@ public class glomod implements ModInitializer {
         public static final purplediamond PURPLEDIAMOND = new purplediamond(new Item.Settings());
         public static final bluerod BLUEROD = new bluerod(new Item.Settings());
         public static final boneingot BONEINGOT = new boneingot(new Item.Settings());
-        public static final coralbow CORALBOW = new coralbow(new Item.Settings());
+        public static final coralbow CORALBOW = new coralbow(new Item.Settings().maxDamage(658));
         public static final coralrod CORALROD = new coralrod(new Item.Settings());
         public static final coalrod COALROD = new coalrod(new Item.Settings());
         public static final heavyrod HEAVYROD = new heavyrod(new Item.Settings());
