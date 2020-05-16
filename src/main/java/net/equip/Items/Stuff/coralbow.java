@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
-import net.equip.glomod;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
@@ -33,7 +32,7 @@ public class coralbow extends BowItem {
          if (entity == null) {
             return 0.0F;
          } else {
-            return entity.getActiveItem().getItem() != glomod.CORALBOW ? 0.0F
+            return entity.getActiveItem().getItem() != this ? 0.0F
                   : (float) (stack.getMaxUseTime() - entity.getItemUseTimeLeft()) / 20.0F;
          }
       });
