@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "equip",
-  "version": "1.5.4",
+  "version": "1.5.5",
   "name": "EquipZ",
   "description": "Armor and Weapons",
   "authors": [
@@ -12,7 +12,7 @@
     "sources": "https://github.com/Globox1997/EquipZ"
   },
   "license": "GPLv3",
-  "icon": "assets/equip/logo.png",
+  "icon": "assets/equip/equipz.png",
   "environment": "*",
   "entrypoints": {
     "main": [
