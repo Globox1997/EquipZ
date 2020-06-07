@@ -29449,6 +29449,7 @@
             }
         }
     ],
+    "gui_light": "front",
     "display": {
         "thirdperson_righthand": {
             "rotation": [
@@ -29537,10 +29538,10 @@
         },
         "ground": {
             "rotation": [
-				0,
-				20,
-				0
-			],
+                0,
+                20,
+                0
+            ],
             "translation": [
                 0,
                 19,
