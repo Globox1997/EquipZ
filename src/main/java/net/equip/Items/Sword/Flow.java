@@ -2,11 +2,8 @@ package net.equip.Items.Sword;
 
 import java.util.List;
 import java.util.Random;
-import java.util.function.Consumer;
 
-import net.equip.glomod;
 import net.minecraft.client.item.TooltipContext;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -20,7 +17,7 @@ import net.minecraft.world.World;
 
 public class Flow extends SwordItem {
     public Flow(ToolMaterial toolMaterial_1) {
-        super(toolMaterial_1, 1, -2.4f, new Item.Settings().group(glomod.equip_GROUP));
+        super(toolMaterial_1, 1, -2.4f, new Item.Settings());
     }
 
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
@@ -32,9 +29,7 @@ public class Flow extends SwordItem {
         int randomNumber = random.nextInt() % 2;
         StatusEffectInstance str1 = new StatusEffectInstance(StatusEffect.byRawId(5), 40, 0, false, false, false);
         StatusEffectInstance str2 = new StatusEffectInstance(StatusEffect.byRawId(5), 60, 0, false, false, false);
-        itemStack_1.damage(1, (LivingEntity) livingEntity_2, (Consumer) ((livingEntity_1x) -> {
-            ((LivingEntity) livingEntity_1x).sendEquipmentBreakStatus(EquipmentSlot.MAINHAND);
-        }));
+        itemStack_1.damage(1, livingEntity_2, (p) -> p.sendToolBreakStatus(p.getActiveHand()));
 
         switch (randomNumber) {
             case 0:
