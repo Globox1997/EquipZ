@@ -1,9 +1,9 @@
 package net.equip.Items.Stuff;
 
 import java.util.List;
-import java.util.function.Consumer;
 import java.util.function.Predicate;
 
+import net.fabricmc.fabric.api.object.builder.v1.client.model.FabricModelPredicateProviderRegistry;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
@@ -25,10 +25,11 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
+//stack.damage(1, playerEntity, (p) -> p.sendToolBreakStatus(p.getActiveHand()));
 public class coralbow extends BowItem {
    public coralbow(Settings settings) {
       super(settings);
-      this.addPropertyGetter(new Identifier("pull"), (stack, world, entity) -> {
+      FabricModelPredicateProviderRegistry.register(new Identifier("pull"), (stack, world, entity) -> {
          if (entity == null) {
             return 0.0F;
          } else {
@@ -36,7 +37,7 @@ public class coralbow extends BowItem {
                   : (float) (stack.getMaxUseTime() - entity.getItemUseTimeLeft()) / 20.0F;
          }
       });
-      this.addPropertyGetter(new Identifier("pulling"), (stack, world, entity) -> {
+      FabricModelPredicateProviderRegistry.register(new Identifier("pulling"), (stack, world, entity) -> {
          return entity != null && entity.isUsingItem() && entity.getActiveItem() == stack ? 1.0F : 0.0F;
       });
    }
@@ -89,9 +90,10 @@ public class coralbow extends BowItem {
                      persistentProjectileEntity.setOnFireFor(100);
                   }
 
-                  stack.damage(2, (LivingEntity) playerEntity, (Consumer) ((p) -> {
-                     ((LivingEntity) p).sendToolBreakStatus(playerEntity.getActiveHand());
-                  }));
+                  // stack.damage(1, (LivingEntity)playerEntity, (Consumer)((p) -> {
+                  // ((LivingEntity) p).sendToolBreakStatus(playerEntity.getActiveHand());
+                  // }));
+                  stack.damage(1, playerEntity, (p) -> p.sendToolBreakStatus(p.getActiveHand()));
                   if (bl2 || playerEntity.abilities.creativeMode
                         && (itemStack.getItem() == Items.SPECTRAL_ARROW || itemStack.getItem() == Items.TIPPED_ARROW)) {
                      persistentProjectileEntity.pickupType = PersistentProjectileEntity.PickupPermission.CREATIVE_ONLY;

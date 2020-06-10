@@ -46,8 +46,9 @@ public class ObsidianBase extends ArmorItem {
         }
 
         @Override
-        public Multimap<EntityAttribute, EntityAttributeModifier> getModifiers(EquipmentSlot equipmentSlot) {
-                return equipmentSlot == this.slot ? this.attributeModifiers : super.getModifiers(equipmentSlot);
+        public Multimap<EntityAttribute, EntityAttributeModifier> getAttributeModifiers(EquipmentSlot equipmentSlot) {
+                return equipmentSlot == this.slot ? this.attributeModifiers
+                                : super.getAttributeModifiers(equipmentSlot);
         }
 
         @Override

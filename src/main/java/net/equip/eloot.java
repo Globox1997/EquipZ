@@ -10,7 +10,8 @@ import net.minecraft.util.Identifier;
 
 public class eloot {
 
-    public static final Identifier[] LONE = new Identifier[] { LootTables.SIMPLE_DUNGEON_CHEST, LootTables.SHIPWRECK_SUPPLY_CHEST, LootTables.STRONGHOLD_CORRIDOR_CHEST };
+    public static final Identifier[] LONE = new Identifier[] { LootTables.SIMPLE_DUNGEON_CHEST,
+            LootTables.SHIPWRECK_SUPPLY_CHEST, LootTables.STRONGHOLD_CORRIDOR_CHEST };
     public static final Identifier[] LTWO = new Identifier[] { LootTables.HERO_OF_THE_VILLAGE_TOOLSMITH_GIFT_GAMEPLAY };
     public static final Identifier[] LTHREE = new Identifier[] { LootTables.BURIED_TREASURE_CHEST };
 
@@ -46,50 +47,45 @@ public class eloot {
         LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, supplier, setter) -> {
             if (isone(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
-                        .withRolls(new BinomialLootTableRange(5, 0.3f))
-                        .withEntry(ItemEntry.builder(glomod.OBSIDIANINGOT));
+                        .rolls(new BinomialLootTableRange(5, 0.3f)).with(ItemEntry.builder(glomod.OBSIDIANINGOT));
 
-                supplier.withPool(poolBuilder);
+                supplier.pool(poolBuilder);
             }
         });
 
         LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, supplier, setter) -> {
             if (isone(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
-                        .withRolls(new BinomialLootTableRange(1, 0.3f))
-                        .withEntry(ItemEntry.builder(glomod.PURPLEDIAMOND));
+                        .rolls(new BinomialLootTableRange(1, 0.3f)).with(ItemEntry.builder(glomod.PURPLEDIAMOND));
 
-                supplier.withPool(poolBuilder);
+                supplier.pool(poolBuilder);
             }
         });
 
         LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, supplier, setter) -> {
             if (isone(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
-                        .withRolls(new BinomialLootTableRange(1, 0.2f))
-                        .withEntry(ItemEntry.builder(glomod.NEWDIA));
+                        .rolls(new BinomialLootTableRange(1, 0.2f)).with(ItemEntry.builder(glomod.NEWDIA));
 
-                supplier.withPool(poolBuilder);
+                supplier.pool(poolBuilder);
             }
         });
 
         LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, supplier, setter) -> {
             if (istwo(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
-                        .withRolls(new BinomialLootTableRange(1, 0.05f))
-                        .withEntry(ItemEntry.builder(SwordItems.Knighter));
+                        .rolls(new BinomialLootTableRange(1, 0.05f)).with(ItemEntry.builder(SwordItems.Knighter));
 
-                supplier.withPool(poolBuilder);
+                supplier.pool(poolBuilder);
             }
         });
 
         LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, supplier, setter) -> {
             if (isthree(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
-                        .withRolls(new BinomialLootTableRange(1, 0.3f))
-                        .withEntry(ItemEntry.builder(SwordItems.Flow));
+                        .rolls(new BinomialLootTableRange(1, 0.3f)).with(ItemEntry.builder(SwordItems.Flow));
 
-                supplier.withPool(poolBuilder);
+                supplier.pool(poolBuilder);
             }
         });
 
