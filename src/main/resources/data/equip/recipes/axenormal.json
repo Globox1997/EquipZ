@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "eee",
+    " de",
+    " d "
+  ],
+  "key": {
+    "d": {
+      "item": "equip:heavyrod"
+    },
+    "e": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "equip:axenormal"
+  }
+}

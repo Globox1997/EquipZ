@@ -43,6 +43,8 @@
     "item.equip.coralrod": "Coral Rod",
     "item.equip.coalrod": "Coal Rod",
     "item.equip.heavyrod": "Heavy Rod",
+    "item.equip.newbow": "Reinforced Bow",
+    "item.equip.axenormal": "Battle Axe",
     "item.equip.ender.tooltip": "§9Chance of Glowing",
     "item.equip.ender.tooltip2": "§9Chance of Levitation",
     "item.equip.axered.tooltip": "§9Chance of Slowness",
@@ -52,5 +54,6 @@
     "item.equip.rapier.tooltip": "§9Chance of Poison",
     "item.equip.coralbow.tooltip": "made by elves",
     "item.equip.knighter.tooltip": "warriors old friend",
-    "item.equip.coralbow.tooltip2": "§9Infinity"
+    "item.equip.coralbow.tooltip2": "§9Infinity",
+    "item.equip.newbow.tooltip": "made by orks"
 }

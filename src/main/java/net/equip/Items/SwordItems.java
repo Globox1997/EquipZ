@@ -14,6 +14,7 @@ public class SwordItems {
     public static final ToolMaterial ENDERMATERIAL = new EnderMaterial();
     public static final ToolMaterial BLUEMATERIAL = new BlueMaterial();
     public static final ToolMaterial KNIGHTERMATERIAL = new KnighterMaterial();
+    public static final ToolMaterial AXENMATERIAL = new AxeNMaterial();
 
     public static final Item AxeDark = register("axedark", new AxeDark((AXEMATERIAL)));
     public static final Item AxeRed = register("axered", new AxeRed((AXEMATERIAL)));
@@ -22,6 +23,7 @@ public class SwordItems {
     public static final Item Flow = register("flow", new Flow((BLUEMATERIAL)));
     public static final Item Blue = register("blue", new Blue((BLUEMATERIAL)));
     public static final Item Knighter = register("knighter", new Knighter((KNIGHTERMATERIAL)));
+    public static final Item AxeNormal = register("axenormal", new AxeNormal((AXENMATERIAL)));
 
     private static Item register(String id, Item item) {
         return register(new Identifier("equip", id), item);

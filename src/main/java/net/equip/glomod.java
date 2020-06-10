@@ -26,17 +26,27 @@ public class glomod implements ModInitializer {
         public static final coalrod COALROD = new coalrod(new Item.Settings());
         public static final heavyrod HEAVYROD = new heavyrod(new Item.Settings());
         public static final newdia NEWDIA = new newdia(new Item.Settings());
+        public static final newbow NEWBOW = new newbow(new Item.Settings().maxDamage(438));
 
         public static final ItemGroup equip_GROUP = FabricItemGroupBuilder.create(new Identifier("equip", "glomod"))
                         .icon(() -> new ItemStack(ArmorItems.obsidian_chestplate)).appendItems(stacks -> {
                                 stacks.add(new ItemStack(SwordItems.AxeDark));
                                 stacks.add(new ItemStack(SwordItems.AxeRed));
+                                stacks.add(new ItemStack(SwordItems.AxeNormal));
                                 stacks.add(new ItemStack(SwordItems.Ender));
                                 stacks.add(new ItemStack(SwordItems.Rapier));
                                 stacks.add(new ItemStack(SwordItems.Blue));
                                 stacks.add(new ItemStack(SwordItems.Flow));
                                 stacks.add(new ItemStack(SwordItems.Knighter));
+                                stacks.add(ItemStack.EMPTY);
                                 stacks.add(new ItemStack(glomod.CORALBOW));
+                                stacks.add(new ItemStack(glomod.NEWBOW));
+                                stacks.add(ItemStack.EMPTY);
+                                stacks.add(ItemStack.EMPTY);
+                                stacks.add(ItemStack.EMPTY);
+                                stacks.add(ItemStack.EMPTY);
+                                stacks.add(ItemStack.EMPTY);
+                                stacks.add(ItemStack.EMPTY);
                                 stacks.add(ItemStack.EMPTY);
                                 stacks.add(new ItemStack(ArmorItems.slime_helmet));
                                 stacks.add(new ItemStack(ArmorItems.slime_chestplate));
@@ -94,6 +104,7 @@ public class glomod implements ModInitializer {
                 Registry.register(Registry.ITEM, new Identifier("equip", "newdia"), NEWDIA);
                 Registry.register(Registry.ITEM, new Identifier("equip", "coalrod"), COALROD);
                 Registry.register(Registry.ITEM, new Identifier("equip", "heavyrod"), HEAVYROD);
+                Registry.register(Registry.ITEM, new Identifier("equip", "newbow"), NEWBOW);
                 SwordItems.init();
                 ArmorItems.init();
                 eloot.init();
