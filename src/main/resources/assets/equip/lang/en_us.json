@@ -1,4 +1,5 @@
 {
+    "itemGroup.equip.glomod": "EquipZ",
     "item.equip.slime_boots": "Slime Boots",
     "item.equip.slime_chestplate": "Slime Chestplate",
     "item.equip.slime_helmet": "Slime Helmet",
@@ -37,7 +38,6 @@
     "item.equip.bluerod": "Arunas Rod",
     "item.equip.bone_ingot": "Bone Ingot",
     "item.equip.newdia": "Reinforced Diamond",
-    "itemGroup.equip.glomod": "EquipZ",
     "item.equip.knighter": "Knight´s Sword",
     "item.equip.coralbow": "Coral Bow",
     "item.equip.coralrod": "Coral Rod",
@@ -52,8 +52,8 @@
     "item.equip.flow.tooltip": "§9Chance of Strength",
     "item.equip.blue.tooltip": "§9Chance of Regeneration",
     "item.equip.rapier.tooltip": "§9Chance of Poison",
-    "item.equip.coralbow.tooltip": "made by elves",
-    "item.equip.knighter.tooltip": "warriors old friend",
+    "item.equip.coralbow.tooltip": "Made by Elves",
+    "item.equip.knighter.tooltip": "Warriors Old Friend",
     "item.equip.coralbow.tooltip2": "§9Infinity",
-    "item.equip.newbow.tooltip": "made by orks"
+    "item.equip.newbow.tooltip": "Made by Orks"
 }

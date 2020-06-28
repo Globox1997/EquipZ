@@ -25,7 +25,6 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
-//stack.damage(1, playerEntity, (p) -> p.sendToolBreakStatus(p.getActiveHand()));
 public class coralbow extends BowItem {
    public coralbow(Settings settings) {
       super(settings);
@@ -52,9 +51,8 @@ public class coralbow extends BowItem {
    public void onStoppedUsing(ItemStack stack, World world, LivingEntity user, int remainingUseTicks) {
       if (user instanceof PlayerEntity) {
          PlayerEntity playerEntity = (PlayerEntity) user;
-         boolean bl = true;
          ItemStack itemStack = playerEntity.getArrowType(stack);
-         if (!itemStack.isEmpty() || bl) {
+         if (!itemStack.isEmpty()) {
             if (itemStack.isEmpty()) {
                itemStack = new ItemStack(Items.ARROW);
             }
@@ -62,7 +60,6 @@ public class coralbow extends BowItem {
             int i = this.getMaxUseTime(stack) - remainingUseTicks;
             float f = getPullProgress(i);
             if ((double) f >= 0.1D) {
-               boolean bl2 = bl && itemStack.getItem() == Items.ARROW;
                if (!world.isClient) {
                   ArrowItem arrowItem = (ArrowItem) ((ArrowItem) (itemStack.getItem() instanceof ArrowItem
                         ? itemStack.getItem()
@@ -89,14 +86,9 @@ public class coralbow extends BowItem {
                   if (EnchantmentHelper.getLevel(Enchantments.FLAME, stack) > 0) {
                      persistentProjectileEntity.setOnFireFor(100);
                   }
-
-                  // stack.damage(1, (LivingEntity)playerEntity, (Consumer)((p) -> {
-                  // ((LivingEntity) p).sendToolBreakStatus(playerEntity.getActiveHand());
-                  // }));
                   stack.damage(1, playerEntity, (p) -> p.sendToolBreakStatus(p.getActiveHand()));
-                  if (bl2 || playerEntity.abilities.creativeMode
-                        && (itemStack.getItem() == Items.SPECTRAL_ARROW || itemStack.getItem() == Items.TIPPED_ARROW)) {
-                     persistentProjectileEntity.pickupType = PersistentProjectileEntity.PickupPermission.CREATIVE_ONLY;
+                  if (itemStack.getItem() != Items.SPECTRAL_ARROW || itemStack.getItem() != Items.TIPPED_ARROW) {
+                     persistentProjectileEntity.pickupType = PersistentProjectileEntity.PickupPermission.DISALLOWED;
                   }
 
                   world.spawnEntity(persistentProjectileEntity);
@@ -105,13 +97,6 @@ public class coralbow extends BowItem {
                world.playSound((PlayerEntity) null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(),
                      SoundEvents.ENTITY_ARROW_SHOOT, SoundCategory.PLAYERS, 1.0F,
                      1.0F / (RANDOM.nextFloat() * 0.4F + 1.2F) + f * 0.5F);
-               if (!bl2 && !playerEntity.abilities.creativeMode) {
-                  itemStack.decrement(1);
-                  if (itemStack.isEmpty()) {
-                     playerEntity.inventory.removeOne(itemStack);
-                  }
-               }
-
                playerEntity.incrementStat(Stats.USED.getOrCreateStat(this));
             }
          }
@@ -119,7 +104,7 @@ public class coralbow extends BowItem {
    }
 
    public static float getPullProgress(int useTicks) {
-      float f = (float) useTicks / 16.0F;
+      float f = (float) useTicks / 20.0F;
       f = (f * f + f * 2.0F) / 3.0F;
       if (f > 1.0F) {
          f = 1.0F;
@@ -157,6 +142,6 @@ public class coralbow extends BowItem {
 
    @Override
    public int getRange() {
-      return 18;
+      return 15;
    }
 }
