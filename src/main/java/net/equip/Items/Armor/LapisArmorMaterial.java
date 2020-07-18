@@ -10,9 +10,8 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 
 public class LapisArmorMaterial implements ArmorMaterial {
-    private static final int[] PROTECTION_AMOUNTS = new int[] { 2, 4, 5, 2 };
-
     private static final int[] BASE_DURABILITY = new int[] { 12, 14, 15, 10 };
+    private static final int[] PROTECTION_AMOUNTS = new int[] { 2, 4, 5, 2 };
 
     @Override
     public int getDurability(EquipmentSlot equipmentSlot) {
@@ -39,12 +38,12 @@ public class LapisArmorMaterial implements ArmorMaterial {
         return Ingredient.ofItems(glomod.LAPISINGOT);
     }
 
-    @Override
+    @Environment(EnvType.CLIENT)
     public String getName() {
         return "lapis1";
     }
 
-    @Environment(EnvType.CLIENT)
+    @Override
     public float getToughness() {
         return 0F;
     }

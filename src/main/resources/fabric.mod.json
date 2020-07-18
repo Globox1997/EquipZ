@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "equip",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "name": "EquipZ",
   "description": "Armor and Weapons",
   "authors": [
@@ -18,7 +18,9 @@
     "main": [
       "net.equip.glomod"
     ],
-    "client": []
+    "client": [
+      "net.equip.glomodclient"
+    ]
   },
   "mixins": [],
   "depends": {

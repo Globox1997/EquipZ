@@ -1,6 +1,5 @@
 package net.equip.Items;
 
-import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.Identifier;
@@ -30,10 +29,6 @@ public class SwordItems {
     }
 
     private static Item register(Identifier id, Item item) {
-        if (item instanceof BlockItem) {
-            ((BlockItem) item).appendBlocks(Item.BLOCK_ITEMS, item);
-        }
-
         return Registry.register(Registry.ITEM, id, item);
     }
 

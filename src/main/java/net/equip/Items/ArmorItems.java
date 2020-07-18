@@ -2,7 +2,6 @@ package net.equip.Items;
 
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -51,7 +50,8 @@ public class ArmorItems {
                         new LapisBase(LapisAppare, EquipmentSlot.CHEST));
         public static final Item lapis1_leggings = register("lapis1_leggings",
                         new LapisBase(LapisAppare, EquipmentSlot.LEGS));
-        public static final Item lapis1_boots = register("lapis1_boots", new LapisBase(LapisAppare, EquipmentSlot.FEET));
+        public static final Item lapis1_boots = register("lapis1_boots",
+                        new LapisBase(LapisAppare, EquipmentSlot.FEET));
 
         public static final Item coal_helmet = register("coal_helmet", new CoalBase(CoalAppare, EquipmentSlot.HEAD));
         public static final Item coal_chestplate = register("coal_chestplate",
@@ -74,10 +74,6 @@ public class ArmorItems {
         }
 
         private static Item register(Identifier id, Item item) {
-                if (item instanceof BlockItem) {
-                        ((BlockItem) item).appendBlocks(Item.BLOCK_ITEMS, item);
-                }
-
                 return Registry.register(Registry.ITEM, id, item);
         }
 

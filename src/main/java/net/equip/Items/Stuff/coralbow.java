@@ -3,7 +3,6 @@ package net.equip.Items.Stuff;
 import java.util.List;
 import java.util.function.Predicate;
 
-import net.fabricmc.fabric.api.object.builder.v1.client.model.FabricModelPredicateProviderRegistry;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
@@ -20,7 +19,6 @@ import net.minecraft.stat.Stats;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Hand;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
@@ -28,17 +26,6 @@ import net.minecraft.world.World;
 public class coralbow extends BowItem {
    public coralbow(Settings settings) {
       super(settings);
-      FabricModelPredicateProviderRegistry.register(new Identifier("pull"), (stack, world, entity) -> {
-         if (entity == null) {
-            return 0.0F;
-         } else {
-            return entity.getActiveItem().getItem() != this ? 0.0F
-                  : (float) (stack.getMaxUseTime() - entity.getItemUseTimeLeft()) / 20.0F;
-         }
-      });
-      FabricModelPredicateProviderRegistry.register(new Identifier("pulling"), (stack, world, entity) -> {
-         return entity != null && entity.isUsingItem() && entity.getActiveItem() == stack ? 1.0F : 0.0F;
-      });
    }
 
    @Override

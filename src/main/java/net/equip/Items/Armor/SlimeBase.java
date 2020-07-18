@@ -42,18 +42,8 @@ public class SlimeBase extends ArmorItem {
         }
 
         @Override
-        public Multimap<EntityAttribute, EntityAttributeModifier> getAttributeModifiers(EquipmentSlot equipmentSlot) {
-                return equipmentSlot == this.slot ? this.attributeModifiers
-                                : super.getAttributeModifiers(equipmentSlot);
+        public Multimap<EntityAttribute, EntityAttributeModifier> getAttributeModifiers(EquipmentSlot slot) {
+                return slot == this.slot ? this.attributeModifiers : super.getAttributeModifiers(slot);
         }
 
-        @Override
-        public int getProtection() {
-                return this.protection;
-        }
-
-        @Override
-        public float method_26353() {
-                return this.toughness;
-        }
 }
